@@ -1,0 +1,540 @@
+/*
+Theme Name: Test2
+Description:  test2 theme
+*/
+@font-face { 
+  font-family: 'Modern No.20'; 
+  src: url('fonts/MOD20.TTF') format('TTF');
+      /* url('webfont.ttf')  format('truetype'),*/  
+}
+html,body, *{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Modern No.20', sans-serif;
+}
+.global-wrapper{
+    background-image: url(images/bg.png);
+    background-color: #fff;
+    background-blend-mode: difference;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.all-wrapper{
+    width: 90%;
+    margin: auto;
+}
+.container{
+    margin: 0 11% 0 11%;
+    width: 78%;
+}
+/*Header part*/
+header{
+    height: 3.875em;
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+header div{
+    float: left;
+}
+nav.container{
+    display: inline-block;
+    position: relative;
+    top: -3.35em;
+    z-index: 5;
+}
+nav.container div.all-wrapper{
+    float: none;
+    margin: 0;
+}
+#first-header-bg, #second-header-bg{
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+#first-header-bg{
+    background: #fff;
+    width: 32%;
+}
+#second-header-bg{
+    background: #00a651;
+    width: 68%;
+}
+#second-header-bg hr{
+    margin-top: 3.6em;
+}
+.logo{
+    outline: none;
+    margin-left: 4em;
+    margin-top: -0.6em;
+}
+.logo img{
+    width: 60px;
+    height: 65px;
+}
+.slogan{
+    padding: 0 1.3em;
+}
+.slogan p{
+    text-align: center;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+.slogan p>span{
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform:none;
+    letter-spacing: 0;
+}
+
+.contact-wrapper{
+    color: #fff;
+    position: relative;
+    margin-left: 1.7em;
+}
+.description{
+    padding-top: 7px;
+    font-size: 0.6rem;
+    height: 100%;
+    width: 100%;
+    font-style: italic;
+    line-height: 1.05;
+}
+.contact{
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    left: -0.5em;
+    top: -1em;
+    border: 2px solid #00a651;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 0.5;
+    padding: 0.55em 1.35em 0.3em 1.35em;
+    width: 11.5em;
+    height: 5em;
+    text-align: right;
+}
+.contact div{
+    display: block;
+    text-align: right;
+    float: right;
+}
+.contact a{
+    color:#00a651;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+.contact a:last-of-type{
+    color: blue;
+    font-size: 0.55rem;
+    text-decoration: underline;
+}
+/*Content part*/
+section.section-content{
+    position: relative;
+    top: -4.4em;
+    padding-left: 0.7em;
+}
+.container main{
+    background: #fff;
+    padding: 0.5em 2em 0.5em 2em;
+    min-height: 92.7em;
+    position: relative;
+    z-index: 8;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 0.57rem;
+    display: inline-block;
+}
+div.content-wrapper{
+    margin-top: 3em;
+}
+.container div{
+    float: left;
+}
+.container div.all-wrapper{
+    float: none;
+}
+.banner-wrapper .first-banner, .content-wrapper .content{
+    z-index: 5;
+    position: relative;
+}
+.first-banner{
+    margin-right: 1em;
+}
+#panel{
+    display: none;
+    z-index: 10;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 2.5em;
+    width: 28.5%;
+    padding: 0.6em 1.2em;
+    line-height: 1.5em;
+    left: 2em;
+    bottom: 0;
+    top: 19.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    transition: opacity .5s;
+}
+#first-banner:hover #panel{
+    display: block;
+    transition: opacity .5s;
+}
+div.content-wrapper{
+    width: 100%;
+    min-height: 48em;
+}
+div.content{
+    width: 70%;
+    font-size: 0.82rem;
+}
+div.content h2{
+    font-size: 1.1rem;
+}
+div.sidebar{
+    float: right;
+    width: 30%;
+    position: relative;
+    top: -3.5em;
+    text-align: right;
+}
+.sidebar-header{
+    height: 5em;
+    width: 80%;
+    position: relative;
+    z-index: 5;
+    margin-left: 4em;
+}
+.sidebar-header .ball{
+    background-image: url(images/second-ball.png);
+    background-repeat: no-repeat;
+    background-position-x: -1.3em;
+    top: 1.5em;
+    position: relative;
+    z-index: 15;
+    height: 6em;
+    width: 100%
+        
+}
+.sidebar-header-bg{
+    height: 4em;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: #00a651;
+}
+.sidebar-header-bg h3{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 0.5em;
+}
+.sidebar-header-bg h3>span{
+    color: yellow;
+}
+.sidebar-body{
+    background: #ebebeb;
+    min-height: 39.5em;
+    margin-left: 4em;
+    margin-top: 1em;
+    width: 80%;
+}
+.kolba-wrapper{
+    width: 90%;
+    min-height: 48em;
+    padding-bottom: 15em;
+}
+.kolba-content{
+    z-index: 5;
+    position: relative;
+    width: 100%;
+}
+.kolba-content div{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+}
+.kolba-content h2{
+    margin-top: 1em;
+    font-size: 1rem;
+}
+.kolba-content p{
+    padding-left: 1em;
+    padding-right: 2.5em;
+    font-size: 0.9rem;
+}
+/*Footer part*/
+.footer-right-corner{
+    background-image: url(images/ball.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    height: 13em;
+    width: 100%;
+    position: relative;
+    left: -2em;
+    z-index: 15;
+}
+section.section-footer{
+    margin-top: -16em;
+ }
+footer{
+    height: 7.875em;
+    background-color: #00a651;
+    display: block;
+}
+footer *{
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.8rem;
+}
+footer div{
+    float: left;
+}
+footer nav.container{
+    position: relative;
+    top: 0;
+    padding-top: 0.5em;
+    height: 100%;
+}
+nav >.first-block, nav >.second-block, nav >.third-block{
+    height: 100%;
+    border-right: #333 solid 2px;
+    width: 26.5%;
+}
+footer nav>.first-block{
+    width: 33%;
+}
+footer nav >.first-block>.logo p{
+    font-size: 0.5rem;
+}
+nav >.first-block>.logo{
+    padding-top: 1em;
+    font-size: 50%;
+    padding-top: 1em;
+    padding-left: 3.5em;
+}
+nav >.second-block, nav >.third-block{
+    padding-left: 1em;
+}
+footer .menu{
+    list-style: none;
+    padding-top: 1em;
+}
+footer .menu a{
+    text-decoration: none;
+}
+footer .menu a:hover{
+    color: yellow;
+}
+@media screen and (max-width: 1365px){
+    #first-header-bg{
+        width: 40%;
+    }
+    #second-header-bg{
+        width: 60%;
+    }
+    .first-banner{
+        width: 66%;
+    }
+    .second-banner{
+        width: 33%;
+    }
+    div.content-wrapper{
+        width: 97%;
+    }
+    div.content {
+        width: 69.2%
+    }
+    .second-banner{
+        width: 32%;
+    }
+    .first-banner img, .second-banner img{
+        height: max-content;
+    }
+    
+    .second-banner a>img{   
+        max-width: 67%;
+        height: auto;
+    }
+    
+    #panel{
+        top: 16.5em;
+        height: 5.5em;
+    }
+    .sidebar-header, .sidebar-body{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .sidebar-header .ball{
+        z-index: 5;
+    }
+    .footer-right-corner{
+        background-position-x: 80%;
+    }
+    footer nav>.first-block{
+        width: 23%;
+    }
+    nav >.first-block, nav >.second-block, nav >.third-block{
+        width: 21.5%;
+    }
+    .footer-right-corner{
+        background-position-x: 125%;
+    }
+}
+@media (min-width:1070px) and (max-width:1365px){
+    #first-header-bg{
+        width: 38%;
+    }
+    #second-header-bg{
+        width: 62%;
+    }
+}
+@media (min-width:1150px) and (max-width:1365px){
+    #first-header-bg{
+        width: 36%;
+    }
+    #second-header-bg{
+        width: 64%;
+    }
+}
+@media (min-width:1200px) and (max-width:1365px){
+    #first-header-bg{
+        width: 35%;
+    }
+    #second-header-bg{
+        width: 65%;
+    }
+    div.content {
+        width: 68.2%;
+    }
+    div.sidebar{
+        float: left;
+    }
+}
+@media (min-width:1300px) and (max-width:1365px){
+    #first-header-bg{
+        width: 32%;
+    }
+    #second-header-bg{
+        width: 68%;
+    }
+    div.content {
+        width: 63.2%;
+    }
+}
+@media (min-width:1320px) and (max-width:1365px){
+    div.content {
+        width: 61%;
+    }
+}
+@media screen and (min-width:1400px){
+    .sidebar-header, .sidebar-body{
+        margin-left: 2em;
+    }
+}
+@media screen and (min-width:1450px){
+    .container main{
+        width: 105em;
+        margin: 0 auto;
+    }
+    div.sidebar{
+        float: left;
+        width: 27.2%;
+    }
+    .sidebar-header, .sidebar-body{
+        margin-left: 0;
+        width: 100%;
+    }
+    div.content{
+        width: 72.8%;
+    }
+}
+@media screen and (min-width:1500px){
+    #first-header-bg{
+        width: 34%;
+    }
+    #second-header-bg{
+        width: 66%;
+    }
+    nav.container div.all-wrapper{
+        margin: auto;
+    }
+    
+    footer nav>.first-block{
+        width: 23%;
+    }
+    nav >.first-block, nav >.second-block, nav >.third-block{
+        width: 21.5%;
+    }
+}
+@media screen and (min-width:1600px){
+    #first-header-bg{
+        width: 32%;
+    }
+    #second-header-bg{
+        width: 68%;
+    }
+ }
+
+@media screen and (min-width:1750px){
+    #first-header-bg{
+        width: 31%;
+    }
+    #second-header-bg{
+        width: 69%;
+    }
+}
+@media screen and (min-width:1800px){
+    #first-header-bg{
+        width: 30%;
+    }
+    #second-header-bg{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1950px){
+    #first-header-bg{
+        width: 29%;
+    }
+    #second-header-bg{
+        width: 71%;
+    }
+}
+@media screen and (min-width:1990px){
+    #first-header-bg {
+        width: 37%;
+    }
+    #second-header-bg {
+        width: 63%;
+    }
+    .container{
+        margin: 0 20% 0 20%;
+        width: 60%;
+    }  
+    .footer-right-corner{
+        background-position-x: 80%;
+    }
+    footer nav>.first-block{
+        width: 23%;
+    }
+    nav >.first-block, nav >.second-block, nav >.third-block{
+        width: 21.5%;
+    }
+}
